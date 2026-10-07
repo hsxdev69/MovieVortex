@@ -29,7 +29,9 @@
     <string name="duration_format" formatted="true">%d min</string>
     <string name="app_name">MovieVortex</string>
     <string name="play_with_app_name">Play with MovieVortex</string>
-    <string name="title_home">Home</string>
+    <string name="title_home">Movie/TV</string>
+    <string name="title_movie_tv">Movie/TV</string>
+    <string name="title_anime">Anime</string>
     <string name="title_search">Search</string>
     <string name="title_downloads">Downloads</string>
     <string name="download_queue">Download queue</string>
@@ -47,6 +49,10 @@
     <string name="browser">Browser</string>
     <string name="skip_loading">Skip Loading</string>
     <string name="loading">Loading…</string>
+    <string name="my_list">My List</string>
+    <string name="badge_new">NEW</string>
+    <string name="badge_multi">MULTI</string>
+    <string name="badge_dual">DUAL</string>
     <string name="type_watching">Watching</string>
     <string name="type_on_hold">On-Hold</string>
     <string name="type_completed">Completed</string>
@@ -74,7 +80,7 @@
     <string name="download_canceled">Download Canceled</string>
     <string name="download_done">Download Done</string>
     <string name="downloads_delete_select">Select Items to Delete</string>
-    <string name="downloads_empty">There are currently no downloads.</string>
+    <string name="downloads_empty">No downloads yet\nBrowse Movies, Series &amp; Anime and tap download to watch offline.</string>
     <string name="queue_empty_message">There are currently no queued downloads.</string>
     <string name="offline_file">Available for watching offline</string>
     <string name="select_all">Select All</string>
@@ -212,6 +218,7 @@
     <string name="apk_installer_settings">APK Installer</string>
     <string name="apk_installer_settings_des">Some devices do not support the new package installer. Try the legacy option if updates do not install.</string>
     <string name="github">Github</string>
+    <string name="telegram">Join Telegram Community</string>
     <string name="lightnovel">Light novel app by the same devs</string>
     <string name="anim">Anime app by the same devs</string>
     <string name="discord">Join Discord</string>
@@ -385,7 +392,7 @@
     <string name="provider_lang_settings">Extension languages</string>
     <string name="app_layout">App Layout</string>
     <string name="preferred_media_settings">Preferred media</string>
-    <string name="enable_nsfw_on_providers">Enable NSFW on supported Extensions</string>
+    <string name="enable_nsfw_on_providers">Adult Mode (18+)</string>
     <string name="subtitles_encoding">Subtitle encoding</string>
     <string name="category_providers">Providers</string>
     <string name="category_provider_test">Provider test</string>

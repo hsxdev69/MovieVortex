@@ -378,6 +378,12 @@ object PluginManager {
                 return@mapNotNull null
             }
 
+            // MovieVortex: strictly download only the 3 designated core servers
+            val allowedServers = setOf("anivortex", "istreamflare", "movieboxprovider", "moviebox")
+            if (!allowedServers.contains(sitePlugin.internalName.lowercase())) {
+                return@mapNotNull null
+            }
+
             //Omit already existing plugins
             if (getPluginPath(activity, sitePlugin.internalName, onlineData.repositoryData.url).exists()) {
                 Log.i(TAG, "Skip > ${sitePlugin.internalName}")

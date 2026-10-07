@@ -245,10 +245,18 @@ object SettingsGeneralScreen : SearchableSettings {
                 preferenceItems = persistentListOf(
                     Preference.PreferenceItem.TextPreference(
                         title = stringResource(R.string.github),
-                        subtitle = "https://github.com/recloudstream/cloudstream",
+                        subtitle = "https://github.com/hsxdev69/MovieVortex",
                         icon = painterResource(R.drawable.ic_github_logo),
                         onClick = {
-                            CloudStreamApp.openBrowser("https://github.com/recloudstream/cloudstream")
+                            CloudStreamApp.openBrowser("https://github.com/hsxdev69/MovieVortex")
+                        }
+                    ),
+                    Preference.PreferenceItem.TextPreference(
+                        title = stringResource(R.string.telegram),
+                        subtitle = "https://t.me/MovieVortexOfficial",
+                        icon = painterResource(R.drawable.ic_baseline_discord_24),
+                        onClick = {
+                            CloudStreamApp.openBrowser("https://t.me/MovieVortexOfficial")
                         }
                     ),
                     Preference.PreferenceItem.TextPreference(

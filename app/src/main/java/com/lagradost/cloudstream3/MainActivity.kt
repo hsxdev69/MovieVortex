@@ -831,6 +831,19 @@ class MainActivity : AppCompatActivity(), ColorPickerDialogListener, BiometricCa
                                 }
                             }
                         }
+                        // Rename designated servers to Turbo, Core, and Rift
+                        allProviders.forEach { provider ->
+                            val sName = provider::class.simpleName?.lowercase() ?: ""
+                            val pName = provider.name.lowercase()
+                            if (sName.contains("anivortex") || pName.contains("anivortex")) {
+                                provider.name = "Turbo"
+                            } else if (sName.contains("istreamflare") || pName.contains("istreamflare")) {
+                                provider.name = "Core"
+                            } else if (sName.contains("moviebox") || pName.contains("moviebox")) {
+                                provider.name = "Rift"
+                            }
+                        }
+
                         // it.hashCode() is not enough to make sure they are distinct
                         apis = allProviders.distinctBy {
                             it.lang + it.name + it.mainUrl + it::class.qualifiedName
