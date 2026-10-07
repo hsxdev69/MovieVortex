@@ -712,11 +712,11 @@
     </style>
 
     <style name="WhiteButton" parent="NiceButton">
-        <item name="strokeColor">?attr/iconGrayBackground</item>
-        <item name="backgroundTint">?attr/textColor</item>
-        <item name="iconTint">?attr/iconGrayBackground</item>
-        <item name="android:textColor">?attr/iconGrayBackground</item>
-        <item name="rippleColor">?attr/primaryBlackBackground</item>
+        <item name="strokeColor">@color/transparent</item>
+        <item name="backgroundTint">?attr/colorPrimary</item>
+        <item name="iconTint">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="rippleColor">?attr/colorPrimarySecond</item>
     </style>
     <!-- This is so shit, because android has no native way to either changing the layout (android:layout) or changing the layout_height for no reason.
     So the only way to shrink the buttons is by using insetTop+insetBottom along with the drawable.
@@ -776,11 +776,11 @@
     </style>
 
     <style name="BlackButton" parent="NiceButton">
-        <item name="strokeColor">?attr/textColor</item>
-        <item name="backgroundTint">?attr/iconGrayBackground</item>
+        <item name="strokeColor">#33FFFFFF</item>
+        <item name="backgroundTint">?attr/boxItemBackground</item>
         <item name="iconTint">?attr/textColor</item>
         <item name="android:textColor">?attr/textColor</item>
-        <item name="rippleColor">@color/black_button_ripple</item>
+        <item name="rippleColor">?attr/colorPrimary</item>
     </style>
 
     <style name="SmallBlackButton" parent="BlackButton">
